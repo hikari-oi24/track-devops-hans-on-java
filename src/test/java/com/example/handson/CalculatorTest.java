@@ -8,3 +8,8 @@ Calculator calc = new Calculator();
 assertEquals(5.0, calc.add(2.0, 3.0));
 }
 @Test
+public void testAddDecimalValues() {
+Calculator calc = new Calculator();
+assertEquals(4.8, calc.add(1.2, 3.5), 0.0001);
+}
+}
